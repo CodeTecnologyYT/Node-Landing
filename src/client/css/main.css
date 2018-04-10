@@ -10,22 +10,32 @@ body{
     background-size: cover;
 }
 #home-container{
+    display: -ms-grid;
     display: grid;
     grid-template-columns: .5fr 1fr 1fr .5fr;
+    -ms-grid-template-columns: .5fr 1fr 1fr .5fr;
     grid-gap: 10px;
+    -ms-grid-gap: 10px;
     grid-template-areas: ". left right .";
+    -ms-grid-template-areas: ". left right .";
     height: 100%;
     margin-top: -22px;
 }
 #inner{
     grid-area: left;
+    -ms-grid-area: left;
     align-self: center;
+    -ms-align-self: center;
     justify-self: center;
+    -ms-justify-self: center;
 }
 #illustration{
     grid-area: right;
+    -ms-grid-area: right;
     align-self: center;
+    -ms-align-self: center;
     justify-self: center;
+    -ms-justify-self: center;
     width: 80%;
 }
 img#logo{
